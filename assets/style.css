@@ -1,0 +1,43 @@
+
+body, html {
+    background-color: #eaffd0;
+    height: 100%;
+}
+
+
+#title {
+    padding: 5px;
+}
+
+#interface {
+    background-color: #95e1d3;
+}
+
+#weather {
+    background-color: #fce38a;
+}
+
+.card {
+    background-color: #95e1d3;
+    margin: 5px;
+}
+
+#today {
+    background-color: #ff75a0;
+    margin: 5px;
+}
+
+section {
+    margin-top: 30px;
+}
+
+#title {
+    margin-top: 50px;
+    background-color: #ff75a0;
+}
+
+#weatherDisplay {
+    padding: 5px;
+    float: left;
+
+}

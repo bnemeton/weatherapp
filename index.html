@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/bulma.min.css">
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+    <h2 class="title is-2" id="title">Weather Lookup</h2>
+    <section>
+    <div class="tile is-ancestor">
+        <div class="tile is-4 is-parent">
+            <div class="tile box is-child" id="interface">
+                <form>
+                <input type="text" id="city" placeholder="search for a city" autofocus></input>
+                <button type="submit" class="button">submit</button>
+                <span id="msg"></span> 
+                </form>
+                <ul id="prevSearches">
+                    
+                </ul>
+            </div>
+        </div>
+        <div class="tile is-8 is-parent is-vertical" >
+            <div class="tile box is-child" id="weather">
+                <p id="date"></p>
+                <div class="columns" id="forecast"></div>
+            </div>
+        </div>
+    </div>
+</section>
+<script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.27.0/moment.min.js"
+    ></script>
+<script src="assets/script.js"></script>
+</body>
+</html>
