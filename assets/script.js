@@ -67,7 +67,7 @@ form.addEventListener("submit", function(event) {
         localStorage.setItem("list", prevSearches.innerHTML)
         var lon = coord.lon;
         var lat = coord.lat;
-        var url = `http://api.openweathermap.org/data/2.5/uvi?lat=${lat}&lon=${lon}&appid=${apiKey}`;
+        var url = `https://api.openweathermap.org/data/2.5/uvi?lat=${lat}&lon=${lon}&appid=${apiKey}`;
 
         return fetch(url)
         .then(response => response.json())
@@ -78,9 +78,9 @@ form.addEventListener("submit", function(event) {
             uv.textContent = "UV index: " + value;
             todayContent.appendChild(uv);
             var url = `https://api.openweathermap.org/data/2.5/onecall?lat=${lat}&lon=${lon}&exclude=minutely,hourly,alerts&appid=${apiKey}&units=imperial`
-            return fetch(url)
-            .then(response => response.json())
-            .then(data => {
+        return fetch(url)
+        .then(response => response.json())
+        .then(data => {
                 const {daily} = data;
                 for (i=1; i < 6; i++) {
                     var day = daily[i];
