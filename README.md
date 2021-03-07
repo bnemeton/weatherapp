@@ -11,4 +11,4 @@ A simple app for retrieving weather forecasts for a given city from a weather da
 
 
 ## Deployed link:
-
+https://bnemeton.github.io/weatherapp/ 
