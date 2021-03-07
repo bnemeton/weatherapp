@@ -65,8 +65,6 @@ form.addEventListener("submit", function(event) {
         prevSearches.appendChild(li);
         console.log(prevSearches.innerHTML);
         localStorage.setItem("list", prevSearches.innerHTML)
-
-        var apiKey = "91046781fbed9e003d3e2a7bd33ced99";
         var lon = coord.lon;
         var lat = coord.lat;
         var url = `http://api.openweathermap.org/data/2.5/uvi?lat=${lat}&lon=${lon}&appid=${apiKey}`;
